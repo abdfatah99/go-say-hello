@@ -4,9 +4,9 @@ import (
 	"fmt"
 )
 
-func SayHello() string {
+func SayHello(name string) string {
 	fmt.Println("Say Hello From Go-Module")
-	return "say Hello return value"
+	return fmt.Sprintf("Hello, I'm %s; from SayHello() func", name)
 }
 
 // add new feature to module, Introduction function representing information
